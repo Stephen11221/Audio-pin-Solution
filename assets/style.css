@@ -1,6 +1,9 @@
-body{
+/* Base styles */
+
+body {
     overflow-x: hidden;
 }
+
 .loading-container {
     margin-top: 150px;
     text-align: center;
@@ -36,46 +39,96 @@ body{
         transform: rotate(360deg);
     }
 }
+
 .timeout-text {
     margin-top: 10px;
     font-size: 1rem;
     color: #ff4136; /* Red color for timeout warning */
 }
-.home{
+
+.home {
     margin-top: 250px;
 }
-.get-btn{
+
+.get-btn {
     display: block;
-    width:  150px;
+    width: 150px;
     background: greenyellow;
     text-decoration: none;
     color: aliceblue;
-     border-radius: 30px ;
-     margin-top: 50px;
-     padding: 16px 25px;
+    border-radius: 30px;
+    margin-top: 50px;
+    padding: 16px 25px;
 }
-.about{
+
+.about {
     margin-top: 50px;
     padding: 100px 50px;
 }
 
-.box-grid{
+.box-grid {
     display: flex;
     flex-wrap: wrap;
     padding: 50px 100px;
-    div{
-        min-width: 300px;
-        padding: 20px 20px;
-        border: 2px solid greenyellow;
-        margin-left: 50px;
-        margin-top: 30px;
-    }
 }
-.logo-list{
+
+.box-grid div {
+    min-width: 300px;
+    padding: 20px 20px;
+    border: 2px solid greenyellow;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.logo-list {
     background: greenyellow;
     color: aliceblue;
     padding: 10px 20px;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 40px;
-    border: 2px solid rgb(42, 59, 17)   ;
+    border: 2px solid rgb(42, 59, 17);
+}
+
+/* Media query for small devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .loading-container {
+        margin-top: 100px;
+    }
+
+    .audio-pin {
+        width: 70px;
+        height: 70px;
+    }
+
+    .timeout-text {
+        font-size: 0.9rem;
+    }
+
+    .home {
+        margin-top: 150px;
+    }
+
+    .get-btn {
+        width: 120px;
+        padding: 12px 20px;
+        margin-top: 30px;
+    }
+
+    .about {
+        padding: 50px 20px;
+    }
+
+    .box-grid {
+        padding: 20px 40px;
+    }
+
+    .box-grid div {
+        min-width: 250px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .logo-list {
+        padding: 8px 16px;
+    }
 }
