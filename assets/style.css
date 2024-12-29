@@ -1,0 +1,81 @@
+body{
+    overflow-x: hidden;
+}
+.loading-container {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.audio-pin {
+    width: 100px;
+    height: 100px;
+    border: 5px solid transparent;
+    border-top: 5px solid #39ff14; /* Glowing green */
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+    position: relative;
+    margin: 0 auto;
+}
+
+.audio-pin:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    background: #39ff14;
+    border-radius: 50%;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.timeout-text {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #ff4136; /* Red color for timeout warning */
+}
+.home{
+    margin-top: 250px;
+}
+.get-btn{
+    display: block;
+    width:  150px;
+    background: greenyellow;
+    text-decoration: none;
+    color: aliceblue;
+     border-radius: 30px ;
+     margin-top: 50px;
+     padding: 16px 25px;
+}
+.about{
+    margin-top: 50px;
+    padding: 100px 50px;
+}
+
+.box-grid{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 100px;
+    div{
+        min-width: 300px;
+        padding: 20px 20px;
+        border: 2px solid greenyellow;
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+}
+.logo-list{
+    background: greenyellow;
+    color: aliceblue;
+    padding: 10px 20px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 40px;
+    border: 2px solid rgb(42, 59, 17)   ;
+}
